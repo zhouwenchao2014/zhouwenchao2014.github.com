@@ -26,6 +26,9 @@ body {
 .third {
   background-color: #6FBCCE;
 }
+.four {
+  background-color: #15A0F5;
+}
 .myphoto {
   position: absolute;
   width: 100px;
@@ -49,6 +52,7 @@ body {
 p {
   color: white;
   font-size: 40px;
+  text-shadow: 1px 1px 1px white;
 }
 .school {
   cursor: pointer;
