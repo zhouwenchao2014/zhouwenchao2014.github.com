@@ -10,8 +10,23 @@ body {
   width: 100%;
   height: 100%;
 }
-.panel {
+.first,
+.secound {
   width: 100%;
   height: 100%;
+}
+.first {
   background-color: #21B2A6;
+}
+.secound {
+  background-color: #505393;
+}
+img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  top: 10%;
+  left: 47%;
+  border: 2px solid white;
 }
