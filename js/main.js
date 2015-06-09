@@ -50,6 +50,7 @@ var scrollFunc = function(e) {
 
 		}
 	} else if (e.detail) { //Firefox滑轮事件
+
 		if (e.detail > 0) { //当滑轮向上滚动时
 			if (scrollTimes <= 1) {
 				scrollTimes = 1;
