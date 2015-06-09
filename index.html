@@ -4,8 +4,17 @@
     <title>周文超</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
+    <div id="scroll">
+      <ul id="scrollul">
+        <li><a id="1" class="scrollpointer" href="javascript:;" onclick="selectScoll(this)"></a></li>
+        <li><a id="2" class="scrollpointer" href="javascript:;" onclick="selectScoll(this)"></a></li>
+        <li><a id="3" class="scrollpointer" href="javascript:;" onclick="selectScoll(this)"></a></li>
+        <li><a id="4" class="scrollpointer" href="javascript:;" onclick="selectScoll(this)"></a></li>
+      </ul>
+    </div>
     <div class="first">
       <a href="http://weibo.com/2172187464/profile?rightmod=1&wvr=6&mod=personinfo">
         <img class="myphoto" src="img/p.jpg">
@@ -15,18 +24,19 @@
         <p class="transformleft">我是周文超</p>
         <p class="transformright">一个JAVA开发者</p>
         <p class="transformleft">也是一个web前端开发者</p>
-        <p class="transfornoname">于2014年6月毕业于<span class="school"><a href="http://www.ecit.edu.cn">东华理工大学</a><img class="ecit" src="img/ecit.jpg"></span></p>
+        <p class="transfornoname">于2014年6月毕业于<span class="school"><a id="ecitschool" href="http://www.ecit.edu.cn">东华理工大学</a><img class="ecit" src="img/ecit.jpg"></span></p>
       </div>
       
     </div>
     <div class="secound">
+      <div class="ability"><span >我的技能</span></div>
       <ul>
-        <li><p>1. 熟练使用ssh框架</p></li>
-        <li><p>2.  熟练使用jquery，js，css。并熟练使用less，了解nodejs，anglular.js</p></li>
-        <li><p>3.  熟练使用oracle,mysql等数据库，并对mongodb等NoSql数据库有一定的了解</p></li>
-        <li><p>4.  熟练使用svn，github等版本控制器，并了解git</p></li>
-        <li><p>5.  熟练使用finereport等报表开发工具</p></li>
-        <li><p></p></li>
+        <li><img class="pic" src="img/node.js.jpg"><img class="pic" src="img/js.png"><img class="pic" src="img/angularJs.jpg"><img class="pic" src="img/jquery.jpg"></li>
+        <li><img class="pic" src="img/css.png"><img class="pic" src="img/less.jpg"></li>
+        <li><img class="pic" src="img/spring.jpg"><img class="pic" src="img/hibernate.jpg"><img class="pic" src="img/struts.jpg"></li>
+        <li><img class="pic" src="img/Oracle.jpg"><img class="pic" src="img/Mysql.png"><img class="pic" src="img/mongodb.jpg"></li>
+        <li><img class="pic" src="img/svn.jpg"><img class="pic" src="img/github.jpg"><img class="pic" src="img/git.jpg"></li>
+        <li><img class="pic" src="img/finereport.png"></li>
       </ul>
     </div>
     <div class="third">
@@ -35,7 +45,6 @@
     <div class="four">
       
     </div>
-    <a href="mailto:953685177@qq.com">953685177@qq.com</a>
   
   </body>
 </html>

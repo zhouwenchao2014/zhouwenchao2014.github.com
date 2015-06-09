@@ -10,6 +10,32 @@ body {
   width: 100%;
   height: 100%;
 }
+#scroll {
+  position: absolute;
+  width: 10px;
+  height: 70px;
+  top: 50%;
+  margin-top: -70px;
+  z-index: 10000;
+  right: 20px;
+}
+#scrollul {
+  width: 10px;
+  height: 40px;
+}
+#scrollul li {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 10px;
+}
+li a {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #FFDA93;
+  display: block;
+}
 .first,
 .secound,
 .third,
@@ -22,12 +48,15 @@ body {
 }
 .secound {
   background-color: #505393;
+  display: none;
 }
 .third {
   background-color: #6FBCCE;
+  display: none;
 }
 .four {
   background-color: #15A0F5;
+  display: none;
 }
 .myphoto {
   position: absolute;
@@ -191,20 +220,31 @@ p {
 .school:hover .ecit {
   display: block;
 }
-a {
+#ecitschool {
   text-decoration: none;
   color: white;
 }
-a:hover {
+#ecitschool:hover {
   color: red;
 }
 ul {
   position: relative;
-  width: 50%;
-  top: 30%;
-  left: 25%;
+  width: 88%;
+  left: 10%;
+  top: 5%;
   list-style-type: none;
 }
-li p {
-  font-size: 30px;
+li img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  padding: 2px;
+  border: 2px solid white;
+}
+.ability {
+  position: absolute;
+  font-size: 40px;
+  width: 40px;
+  color: white;
+  top: 46%;
 }
