@@ -1,6 +1,10 @@
 window.onload=function(){
 	insertTime();
 	debugger
+	var inBar=document.getElementById("inBar");
+	inBar.style.width='296px';
+	var bar=document.getElementById("bar");
+	bar.style.display='none';
 }
 function insertTime(){
 	var time=new Date();
