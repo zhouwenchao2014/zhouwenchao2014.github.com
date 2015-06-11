@@ -3,7 +3,7 @@ window.onload=function(){
 	debugger
 	var inBar=document.getElementById("inBar");
 	inBar.style.width='296px';
-	var bar=document.getElementById("bar");
+	var bar=document.getElementById("loadBg");
 	bar.style.display='none';
 }
 function insertTime(){
