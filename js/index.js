@@ -25,7 +25,7 @@ function insertTime(){
 	week.style.marginLeft=width;
 	setTimeout("insertTime()",100);
 
-var cityUrl = 'http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js';
+    var cityUrl = 'http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js';
     $.getScript(cityUrl, function(script, textStatus, jqXHR) {
         var citytq = remote_ip_info.city ;// 获取城市
         var url = "http://php.weather.sina.com.cn/iframe/index/w_cl.php?code=js&city=" + citytq + "&day=0&dfc=3";
@@ -39,9 +39,14 @@ var cityUrl = 'http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js';
                 if(new Date().getHours() > 17){
                      _f= _w.f2+"_1.png";                
                 }
-                var weathersname=['阵雨'];
-                var weathersvg={'阵雨':16};
-                var img = "<img style='width:40px;height:40px;color:white' src='img/SVG/16.svg' />";
+                var weathersvg=new Map();
+                debugger
+                weathersvg.set('阵雨','18');
+                weathersvg.set('多云','8');
+                var picnum=weathersvg.get(_w.s1);
+                // var weathersname=['阵雨','多云'];
+                // var weathersvg={'阵雨':16,'多云':};
+                var img = "<img style='width:40px;height:40px;color:white' src='img/SVG/"+picnum+".svg' />";
 
                 var tq = citytq + " " + img + " " + _w.s1 + " " + _w.t1 + "<img style='width:40px;height:40px;color:white' src='img/SVG/46.svg' />" + _w.t2 + "<img style='width:40px;height:40px;color:white' src='img/SVG/46.svg' /> " + _w.d1 + _w.p1 + "级";
                 var weather=document.getElementById("weather");
@@ -53,7 +58,6 @@ var cityUrl = 'http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js';
 	debugger
 }
 function changetime(value){
-	debugger
 	if(value<10){
 		value="0"+value;
 	}else{
