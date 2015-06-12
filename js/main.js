@@ -4,6 +4,11 @@ window.onload=function(){
 	a[0].style.backgroundColor="#FFAC0C";
 	debugger
 	window.onmousewheel = scrollFunc;
+
+	var inBar=document.getElementById("inBar");
+	inBar.style.width='296px';
+	var bar=document.getElementById("loadBg");
+	bar.style.display='none';
 }
 function selectScoll(value){
 	getChange(value.id);
