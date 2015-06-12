@@ -1,6 +1,5 @@
 window.onload=function(){
 	insertTime();
-	debugger
 	var inBar=document.getElementById("inBar");
 	inBar.style.width='296px';
 	var bar=document.getElementById("loadBg");
@@ -44,7 +43,6 @@ function insertTime(){
                      _f= _w.f2+"_1.png";                
                 }
                 var weathersvg=new Map();
-                debugger
                 weathersvg.set('阵雨','18');
                 weathersvg.set('多云','8');
                 var picnum=weathersvg.get(_w.s1);
@@ -59,7 +57,6 @@ function insertTime(){
         });
     });
 
-	debugger
 }
 function changetime(value){
 	if(value<10){

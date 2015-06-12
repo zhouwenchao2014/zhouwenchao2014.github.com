@@ -2,7 +2,6 @@ var scrollTimes = 1;
 window.onload=function(){
 	var a=document.getElementsByClassName("scrollpointer");
 	a[0].style.backgroundColor="#FFAC0C";
-	debugger
 	window.onmousewheel = scrollFunc;
 
 	var inBar=document.getElementById("inBar");
@@ -14,7 +13,6 @@ function selectScoll(value){
 	getChange(value.id);
 }
 function getChange(value){
-	debugger
 	var first=document.getElementsByClassName("first");
 	var secound=document.getElementsByClassName("secound");
 	var third=document.getElementsByClassName("third");
@@ -35,7 +33,6 @@ function getChange(value){
 var scrollFunc = function(e) {
 	var direct = 0;
 	e = e || window.event;
-	debugger
 	if (e.wheelDelta) { //判断浏览器IE，谷歌滑轮事件             
 		if (e.wheelDelta > 0) { //当滑轮向上滚动时
 			if (scrollTimes <= 1) {
