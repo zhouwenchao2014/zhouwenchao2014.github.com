@@ -1,0 +1,48 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.header{
+	position: absolute;
+	background-color: #1BBC9B;
+	width: 100%;
+	height: 20%;
+}
+.body{
+	position: absolute;
+	background-color: #34495E;
+	width: 100%;
+	height: 70%;
+	top: 20%;
+}
+.footer{
+	position: absolute;
+	width: 100%;
+	height: 10%;
+	bottom: 10%;
+}
+.row1{
+	position: absolute;
+	width: 20%;
+	height: 30%;
+	background-color: #1BBC9B;
+}
+.col1{
+	left: 15%;
+	top: 2.5%;
+	background-color: #1BBC9B;
+}
+.col2{
+	left: 40%;
+	top: 2.5%;
+	background-color: #1BBC9B;
+}
+.col3{
+	left: 65%;
+	top: 2.5%;
+	background-color: #1BBC9B;
+}

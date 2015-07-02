@@ -40,8 +40,77 @@ li a {
 .secound,
 .third,
 .four {
+  position: absolute;
   width: 100%;
   height: 100%;
+  animation-name: show;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  -webkit-animation-name: show;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+  -o-animation-name: show;
+  -o-animation-duration: 0.5s;
+  -o-animation-timing-function: ease-out;
+  -moz-animation-name: show;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-timing-function: ease-out;
+}
+@keyframes show {
+  from {
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+  }
+}
+@-webkit-keyframes show {
+  from {
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+  }
+}
+@-o-keyframes show {
+  from {
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+  }
+}
+@-moz-keyframes show {
+  from {
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+  }
 }
 .first {
   background-color: #21B2A6;
@@ -68,9 +137,99 @@ li a {
   padding: 4px 4px;
   border: 4px solid white;
   cursor: pointer;
+  -o-animation-name: rotateback;
+  -o-animation-duration: 1s;
+  -o-animation-timing-function: ease-out;
+  -webkit-animation-name: rotateback;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-name: rotateback;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: ease-out;
+  animation-name: rotateback;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  -webkit-transform: rotate(0deg);
 }
 .myphoto:hover {
   border: 4px solid #CACBB9;
+  -o-animation-name: rotate;
+  -o-animation-duration: 1s;
+  -o-animation-timing-function: ease-out;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-name: rotate;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: ease-out;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  -webkit-transform: rotate(180deg);
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+  }
+}
+@-o-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+  }
+}
+@-moz-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+  }
+}
+@keyframes rotateback {
+  from {
+    -webkit-transform: rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotateback {
+  from {
+    -webkit-transform: rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotateback {
+  from {
+    -webkit-transform: rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotateback {
+  from {
+    -webkit-transform: rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
 .my {
   position: absolute;

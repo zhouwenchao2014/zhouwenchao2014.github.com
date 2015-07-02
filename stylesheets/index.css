@@ -122,3 +122,27 @@ a {
     width: 290px;
   }
 }
+#BlogForMe {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  z-index: 10;
+}
+#message {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  background-color: white;
+  -webkit-transform: rotateX(180deg);
+  /* Safari 和 Chrome */
+}
+#message span {
+  color: #3691A4;
+}
+#BlogForMe:hover #message {
+  transform: rotateY(130deg);
+  -webkit-transform: rotateX(180deg);
+  /* Safari 和 Chrome */
+  -moz-transform: rotateY(130deg);
+  bottom: 56px;
+}
