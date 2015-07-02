@@ -1,4 +1,6 @@
 var scrollTimes = 1;
+var colorlist=['#21B2A6','#505393','#6FBCCE','#15A0F5'];
+var preValue="";
 window.onload=function(){
 	var a=document.getElementsByClassName("scrollpointer");
 	a[0].style.backgroundColor="#FFAC0C";
@@ -13,16 +15,34 @@ function selectScoll(value){
 	getChange(value.id);
 }
 function getChange(value){
+	preValue=value;
 	var first=document.getElementsByClassName("first");
 	var secound=document.getElementsByClassName("secound");
 	var third=document.getElementsByClassName("third");
 	var four=document.getElementsByClassName("four");
+	var body=document.getElementsByTagName("body");
 	var list=[first,secound,third,four];
-		var a=document.getElementsByClassName("scrollpointer");
+	var a=document.getElementsByClassName("scrollpointer");
 	for(var i=0;i<list.length;i++){
 		if(value==i+1){
+			debugger
+			if(preValue<value){
+				if(i==0){
+					body[0].style.backgroundColor=colorlist[0];
+				}else{
+					body[0].style.backgroundColor=colorlist[i-1];
+				}
+			}else{
+				if(i==0){
+					body[0].style.backgroundColor=colorlist[0];
+				}else{
+					body[0].style.backgroundColor=colorlist[i+1];
+				}
+			}
+			
 			list[i][0].style.display="block";
 			a[i].style.backgroundColor="#FFAC0C";
+			debugger
 		}else{
 			list[i][0].style.display="none";
 			a[i].style.backgroundColor="#FFDA93";
