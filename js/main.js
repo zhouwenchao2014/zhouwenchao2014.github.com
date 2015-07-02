@@ -15,7 +15,7 @@ function selectScoll(value){
 	getChange(value.id);
 }
 function getChange(value){
-	preValue=value;
+	
 	var first=document.getElementsByClassName("first");
 	var secound=document.getElementsByClassName("secound");
 	var third=document.getElementsByClassName("third");
@@ -26,18 +26,17 @@ function getChange(value){
 	for(var i=0;i<list.length;i++){
 		if(value==i+1){
 			debugger
-			if(preValue<value){
+			if(preValue<value||preValue==""){
 				if(i==0){
 					body[0].style.backgroundColor=colorlist[0];
+					preValue=value;
 				}else{
 					body[0].style.backgroundColor=colorlist[i-1];
+					preValue=value;
 				}
 			}else{
-				if(i==0){
-					body[0].style.backgroundColor=colorlist[0];
-				}else{
-					body[0].style.backgroundColor=colorlist[i+1];
-				}
+				body[0].style.backgroundColor=colorlist[i+1];	
+				preValue=value;
 			}
 			
 			list[i][0].style.display="block";
