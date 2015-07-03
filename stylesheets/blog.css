@@ -10,7 +10,11 @@ html,body{
 	position: absolute;
 	background-color: #1BBC9B;
 	width: 100%;
-	height: 20%;
+	height: 40%;
+}
+.headimg{
+	width: 100%;
+	height: 100%;
 }
 .body{
 	position: absolute;
@@ -23,26 +27,507 @@ html,body{
 	position: absolute;
 	width: 100%;
 	height: 10%;
-	bottom: 10%;
+	bottom: 0%;
 }
-.row1{
+img{
+	width: 100%;
+	height: 100%;
+}
+.row1,.row2,.row3{
 	position: absolute;
 	width: 20%;
 	height: 30%;
+	cursor: pointer;
+	overflow: hidden;
+}
+.row1{
+	top: 2.5%;
 	background-color: #1BBC9B;
 }
+.row2{
+	background-color: #1BBC9B;
+	top: 35%;
+}
+.row3{
+	background-color: #1BBC9B;
+	top: 67.5%;
+}
+
 .col1{
 	left: 15%;
-	top: 2.5%;
 	background-color: #1BBC9B;
 }
 .col2{
 	left: 40%;
-	top: 2.5%;
 	background-color: #1BBC9B;
 }
 .col3{
 	left: 65%;
-	top: 2.5%;
 	background-color: #1BBC9B;
+}
+.hover{
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	background-color: #4E9A39;
+	opacity: 0;
+	text-align: center;
+}
+.hrow1{
+	left: 0px;
+	top: 0px;
+	width: 10%;
+	height: 10%;
+}
+.hrow2{
+    right: 0px;
+	top: 0px;
+	width: 10%;
+	height: 10%;	
+}
+.hrow3{
+	left: 0;
+	bottom: 0px;
+	width: 100%;
+	height: 10%;
+}
+.row1:hover .hover{
+	z-index: 100;
+	animation-name: showprefromlefttop;
+  	animation-duration: 0.5s;
+  	animation-timing-function: ease-out;
+  	-o-animation-name: showprefromlefttop;
+  	-o-animation-duration: 0.5s;
+  	-o-animation-timing-function: ease-out;
+  	-webkit-animation-name: showprefromlefttop;
+  	-webkit-animation-duration: 0.5s;
+  	-webkit-animation-timing-function: ease-out;
+  	-moz-animation-name: showprefromlefttop;
+  	-moz-animation-duration: 0.5s;
+  	-moz-animation-timing-function: ease-out;
+  	opacity:0.5;
+	width: 100%;
+	height: 100%;
+}
+.row2:hover .hover{
+	z-index: 100;
+	animation-name: showprefromright;
+  	animation-duration: 0.5s;
+  	animation-timing-function: ease-out;
+  	-o-animation-name: showprefromright;
+  	-o-animation-duration: 0.5s;
+  	-o-animation-timing-function: ease-out;
+  	-webkit-animation-name: showprefromright;
+  	-webkit-animation-duration: 0.5s;
+  	-webkit-animation-timing-function: ease-out;
+  	-moz-animation-name: showprefromright;
+  	-moz-animation-duration: 0.5s;
+  	-moz-animation-timing-function: ease-out;
+  	opacity:0.5;
+	width: 100%;
+	height: 100%;
+}
+.row3:hover .hover{
+	z-index: 100;
+	animation-name: showprefrombottom;
+  	animation-duration: 0.5s;
+  	animation-timing-function: ease-out;
+  	-o-animation-name: showprefrombottom;
+  	-o-animation-duration: 0.5s;
+  	-o-animation-timing-function: ease-out;
+  	-webkit-animation-name: showprefrombottom;
+  	-webkit-animation-duration: 0.5s;
+  	-webkit-animation-timing-function: ease-out;
+  	-moz-animation-name: showprefrombottom;
+  	-moz-animation-duration: 0.5s;
+  	-moz-animation-timing-function: ease-out;
+  	opacity:0.5;
+	width: 100%;
+	height: 100%;
+}
+/* class=row1 動畫開始 */
+@keyframes showprefromlefttop{
+	from{
+		opacity:0;
+		width: 10%;
+		height: 10%;
+	}
+	to{
+		opacity:0.5;
+		width: 100%;
+		height: 100%;
+	}
+}
+@-o-keyframes showprefromlefttop{
+	from{
+		opacity:0;
+		width: 10%;
+		height: 10%;
+	}
+	to{
+		opacity:0.5;
+		width: 100%;
+		height: 100%;
+	}
+}
+@-moz-keyframes showprefromlefttop{
+	from{
+		opacity:0;
+		width: 10%;
+		height: 10%;
+	}
+	to{
+		opacity:0.5;
+		width: 100%;
+		height: 100%;
+	}
+}
+@-webkit-keyframes showprefromlefttop{
+	from{
+		opacity:0;
+		width: 0%;
+		height: 0%;
+	}
+	to{
+		opacity:0.5;
+		width: 100%;
+		height: 100%;
+	}
+}
+/* class=row1 動畫結束 */
+/* class=row2 動畫開始 */
+@keyframes showprefromright{
+	from{
+		opacity:0;
+		width: 10%;
+		height: 10%;
+	}
+	to{
+		opacity:0.5;
+		width: 100%;
+		height: 100%;
+	}
+}
+@-o-keyframes showprefromright{
+	from{
+		opacity:0;
+		width: 10%;
+		height: 10%;
+	}
+	to{
+		opacity:0.5;
+		width: 100%;
+		height: 100%;
+	}
+}
+@-moz-keyframes showprefromright{
+	from{
+		opacity:0;
+		width: 10%;
+		height: 10%;
+	}
+	to{
+		opacity:0.5;
+		width: 100%;
+		height: 100%;
+	}
+}
+@-webkit-keyframes showprefromright{
+	from{
+		opacity:0;
+		width: 0%;
+		height: 0%;
+	}
+	to{
+		opacity:0.5;
+		width: 100%;
+		height: 100%;
+	}
+}
+/* class=row2 動畫結束 */
+
+
+
+/* class=row3 動畫開始 */
+@keyframes showprefrombottom{
+	from{
+		opacity:0;
+		height: 10%;
+	}
+	to{
+		opacity:0.5;
+		width: 100%;
+		height: 100%;
+	}
+}
+@-o-keyframes showprefrombottom{
+	from{
+		opacity:0;
+		height: 10%;
+	}
+	to{
+		opacity:0.5;
+		width: 100%;
+		height: 100%;
+	}
+}
+@-moz-keyframes showprefrombottom{
+	from{
+		opacity:0;
+		height: 10%;
+	}
+	to{
+		opacity:0.5;
+		width: 100%;
+		height: 100%;
+	}
+}
+@-webkit-keyframes showprefrombottom{
+	from{
+		opacity:0;
+		height: 0%;
+	}
+	to{
+		opacity:0.5;
+		width: 100%;
+		height: 100%;
+	}
+}
+/* class=row3 動畫結束 */
+
+a{
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+}
+span{
+	font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+	font-size: 20px;
+	color: white;
+	text-shadow: #4E9A39 2px 3px 2px;
+}
+#more{
+	position: absolute;
+	width: 5%;
+	height: 20px;
+	right: 8%;
+	bottom: 40px;
+	z-index: 10;
+}
+#more1{
+	position: absolute;
+	width: 5%;
+	height: 20px;
+	right: 8%;
+	bottom: 0px;
+	opacity: 1;
+}
+
+#more:hover #morespan1{
+	animation-name:showmore;
+	animation-duration:1s;
+	animation-timing-function:ease-out;
+	-o-animation-name:showmore;
+	-o-animation-duration:1s;
+	-o-animation-timing-function:ease-out;
+	-moz-animation-name:showmore;
+	-moz-animation-duration:1s;
+	-moz-animation-timing-function:ease-out;
+	-webkit-animation-name:showmore;
+	-webkit-animation-duration:1s;
+	-webkit-animation-timing-function:ease-out;
+	bottom: -30px;
+	opacity: 1;
+}
+#morespan1{
+	position: absolute;
+	bottom: -40px;
+	left: 0px;
+	opacity: 0;
+}
+
+/* id=morespan1 動畫開始 */
+@keyframes showmore{
+	from{
+		opacity:0;
+		bottom: -40px;
+	}
+	to{
+		opacity:1;
+		bottom: -30px;
+	}
+}
+@-o-keyframes showmore{
+	from{
+		opacity:0;
+		bottom: -40px;
+	}
+	to{
+		opacity:1;
+		bottom: -30px;
+	}
+}
+@-moz-keyframes showmore{
+	from{
+		opacity:0;
+		bottom: -40px;
+	}
+	to{
+		opacity:1;
+		bottom: -30px;
+	}
+}
+@-webkit-keyframes showmore{
+	from{
+		opacity:0;
+		bottom: -40px;
+	}
+	to{
+		opacity:1;
+		bottom: -30px;
+	}
+}
+/* class=row3 動畫結束 */
+
+
+#aboutme{
+	position: absolute;
+	top: 70px;
+	right: 70px;
+	margin-left: 10px;
+	z-index: 10;
+}
+#aboutmeE{
+	position: absolute;
+	bottom: -40px;
+	left: 0px;
+	opacity: 0;
+}
+#aboutme:hover #aboutmeE{
+	animation-name:showmore;
+	animation-duration:1s;
+	animation-timing-function:ease-out;
+	-o-animation-name:showmore;
+	-o-animation-duration:1s;
+	-o-animation-timing-function:ease-out;
+	-moz-animation-name:showmore;
+	-moz-animation-duration:1s;
+	-moz-animation-timing-function:ease-out;
+	-webkit-animation-name:showmore;
+	-webkit-animation-duration:1s;
+	-webkit-animation-timing-function:ease-out;
+	bottom: -30px;
+	opacity: 1;
+}
+
+#home{
+	position: absolute;
+	top: 70px;
+	right: 150px;
+	margin-left: 10px;
+	z-index: 10;
+}
+#homeE{
+	position: absolute;
+	bottom: -40px;
+	left: 0px;
+	opacity: 0;
+}
+#home:hover #homeE{
+	animation-name:showmore;
+	animation-duration:1s;
+	animation-timing-function:ease-out;
+	-o-animation-name:showmore;
+	-o-animation-duration:1s;
+	-o-animation-timing-function:ease-out;
+	-moz-animation-name:showmore;
+	-moz-animation-duration:1s;
+	-moz-animation-timing-function:ease-out;
+	-webkit-animation-name:showmore;
+	-webkit-animation-duration:1s;
+	-webkit-animation-timing-function:ease-out;
+	bottom: -30px;
+	opacity: 1;
+}
+#loadBg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #3691A4;
+  z-index: 11110;
+}
+#bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 20px;
+  width: 300px;
+  margin-top: -10px;
+  margin-left: -150px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+#inBar {
+  height: 16px;
+  width: 290px;
+  margin-top: 2px;
+  margin-left: 2px;
+  background: white;
+  border-radius: 8px;
+  -webkit-animation-name: goScroll;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+  -o-animation-name: goScroll;
+  -o-animation-duration: 2s;
+  -o-animation-timing-function: ease-out;
+  -moz-animation-name: goScroll;
+  -moz-animation-duration: 2s;
+  -moz-animation-timing-function: ease-out;
+  animation-name: goScroll;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+@-webkit-keyframes goScroll {
+  from {
+    width: 100px;
+  }
+  40% {
+    width: 180px;
+  }
+  to {
+    width: 290px;
+  }
+}
+@-o-keyframes goScroll {
+  from {
+    width: 100px;
+  }
+  40% {
+    width: 180px;
+  }
+  to {
+    width: 290px;
+  }
+}
+@-moz-keyframes goScroll {
+  from {
+    width: 100px;
+  }
+  40% {
+    width: 180px;
+  }
+  to {
+    width: 290px;
+  }
+}
+@keyframes goScroll {
+  from {
+    width: 100px;
+  }
+  40% {
+    width: 180px;
+  }
+  to {
+    width: 290px;
+  }
 }

@@ -654,3 +654,36 @@ li img {
     width: 290px;
   }
 }
+@-o-keyframes goScroll {
+  from {
+    width: 100px;
+  }
+  40% {
+    width: 180px;
+  }
+  to {
+    width: 290px;
+  }
+}
+@-moz-keyframes goScroll {
+  from {
+    width: 100px;
+  }
+  40% {
+    width: 180px;
+  }
+  to {
+    width: 290px;
+  }
+}
+@keyframes goScroll {
+  from {
+    width: 100px;
+  }
+  40% {
+    width: 180px;
+  }
+  to {
+    width: 290px;
+  }
+}

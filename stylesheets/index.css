@@ -128,21 +128,69 @@ a {
   left: 100px;
   z-index: 10;
 }
-#message {
+
+#blog{
   position: absolute;
-  bottom: 100px;
-  left: 100px;
-  background-color: white;
-  -webkit-transform: rotateX(180deg);
-  /* Safari 和 Chrome */
+  left:0px;
+  bottom: -60px;
+  text-align: center;
+  opacity: 0;
 }
-#message span {
-  color: #3691A4;
+#BlogForMe:hover #blog{
+  animation-name:showmore;
+  animation-duration:1s;
+  animation-timing-function:ease-out;
+  -o-animation-name:showmore;
+  -o-animation-duration:1s;
+  -o-animation-timing-function:ease-out;
+  -moz-animation-name:showmore;
+  -moz-animation-duration:1s;
+  -moz-animation-timing-function:ease-out;
+  -webkit-animation-name:showmore;
+  -webkit-animation-duration:1s;
+  -webkit-animation-timing-function:ease-out;
+  opacity:1;
+  bottom: -50px;
 }
-#BlogForMe:hover #message {
-  transform: rotateY(130deg);
-  -webkit-transform: rotateX(180deg);
-  /* Safari 和 Chrome */
-  -moz-transform: rotateY(130deg);
-  bottom: 56px;
+/* id=morespan1 動畫開始 */
+@keyframes showmore{
+  from{
+    opacity:0;
+    bottom: -60px;
+  }
+  to{
+    opacity:1;
+    bottom: -50px;
+  }
 }
+@-o-keyframes showmore{
+  from{
+    opacity:0;
+    bottom: -60px;
+  }
+  to{
+    opacity:1;
+    bottom: -50px;
+  }
+}
+@-moz-keyframes showmore{
+  from{
+    opacity:0;
+    bottom: -60px;
+  }
+  to{
+    opacity:1;
+    bottom: -50px;
+  }
+}
+@-webkit-keyframes showmore{
+  from{
+    opacity:0;
+    bottom: -60px;
+  }
+  to{
+    opacity:1;
+    bottom: -50px;
+  }
+}
+/* class=row3 動畫結束 */
