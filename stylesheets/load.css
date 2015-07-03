@@ -1,0 +1,82 @@
+#loadBg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #3691A4;
+  z-index: 11110;
+}
+#bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 20px;
+  width: 300px;
+  margin-top: -10px;
+  margin-left: -150px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+#inBar {
+  height: 16px;
+  width: 290px;
+  margin-top: 2px;
+  margin-left: 2px;
+  background: white;
+  border-radius: 8px;
+  -webkit-animation-name: goScroll;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+  -o-animation-name: goScroll;
+  -o-animation-duration: 2s;
+  -o-animation-timing-function: ease-out;
+  -moz-animation-name: goScroll;
+  -moz-animation-duration: 2s;
+  -moz-animation-timing-function: ease-out;
+  animation-name: goScroll;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+@-webkit-keyframes goScroll {
+  from {
+    width: 100px;
+  }
+  40% {
+    width: 180px;
+  }
+  to {
+    width: 290px;
+  }
+}
+@-o-keyframes goScroll {
+  from {
+    width: 100px;
+  }
+  40% {
+    width: 180px;
+  }
+  to {
+    width: 290px;
+  }
+}
+@-moz-keyframes goScroll {
+  from {
+    width: 100px;
+  }
+  40% {
+    width: 180px;
+  }
+  to {
+    width: 290px;
+  }
+}
+@keyframes goScroll {
+  from {
+    width: 100px;
+  }
+  40% {
+    width: 180px;
+  }
+  to {
+    width: 290px;
+  }
+}
