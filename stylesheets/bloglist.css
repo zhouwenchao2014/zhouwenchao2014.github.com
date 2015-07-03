@@ -1,0 +1,28 @@
+table{
+	position: absolute;
+	left:20%;
+	top: 20px;
+	width: 60%;
+}
+tr{
+	width: 100%;
+	 font-family: 'Comic Sans MS', cursive;
+}
+th,td{
+	width: 20%;
+	text-align: center;
+	font-family: 'Comic Sans MS', cursive;
+}
+.col1{
+	width: 50%;
+}
+.col2{
+	width: 30%;
+}
+.col3{
+	width: 20%;
+}
+span{
+	margin-left:20px;
+	cursor: pointer; 
+}
