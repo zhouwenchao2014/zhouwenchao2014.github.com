@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/bloglist.css">
+	<script type="text/javascript" src="js/bloglist.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>博客列表</title>
 </head>
@@ -78,7 +80,7 @@
 			<td class="col2">2015年7月3日16:18:57</td>
 			<td class="col3"><span class="delete">删除</span><a href="blogeditor.html"><span class="editor">编辑</span></a></td>
 		</tr>
-
+		<div id="page"><a class="link" onclick="select(this)" href="javascript:;">1</a><a class="link" onclick="select(this)" href="javascript:;">2</a><a class="link" onclick="select(this)" href="javascript:;">3</a><a class="link" onclick="select(this)" href="javascript:;">4</a>...<a class="link" onclick="select(this)" href="javascript:;">10</a> <div id="export"><span id="excel">导出excel: <i class="fa fa-file-excel-o"></i></span><span id="word">word: <i class="fa fa-file-word-o"></i></span><span id="pdf">pdf: <i class="fa fa-file-pdf-o"></i></span></div></div>
 	</table>
 </div>
 <div class="footer"></div>
