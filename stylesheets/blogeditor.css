@@ -1,0 +1,28 @@
+#savediv{
+	position: absolute;
+	width: 100%;
+	height: 40px;
+}
+.save{
+	position: absolute;
+	width: 60px;
+	height: 30px;
+	right: 4%;
+}
+#titlediv{
+	width: 100%;
+	height: 30px;
+	background-color: white;
+	font-family: 'Comic Sans MS', cursive;
+}
+#titlespan{
+	position: absolute;
+	top: 5px;
+	width: 20%;
+}
+.searchText{
+	position: absolute;
+	left: 60px;	
+	height: 30px;
+	width: 80%;
+}

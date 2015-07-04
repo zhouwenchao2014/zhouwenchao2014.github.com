@@ -303,8 +303,6 @@ a{
 span{
 	font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
 	font-size: 20px;
-	color: white;
-	text-shadow: #4E9A39 2px 3px 2px;
 }
 #more{
 	position: absolute;
@@ -344,8 +342,11 @@ span{
 	bottom: -40px;
 	left: 0px;
 	opacity: 0;
+	color: white;
 }
-
+#morespan{
+	color: white;
+}
 /* id=morespan1 動畫開始 */
 @keyframes showmore{
 	from{
@@ -530,4 +531,7 @@ span{
   to {
     width: 290px;
   }
+}
+#aboutmeC,#homeC,#homeE,#aboutmeE{
+	color: white;
 }
