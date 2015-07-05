@@ -43,8 +43,12 @@ function insertTime(){
                      _f= _w.f2+"_1.png";                
                 }
                 var weathersvg=new Map();
-                weathersvg.set('阵雨','18');
+                weathersvg.set('阵雨','20');
                 weathersvg.set('多云','8');
+                weathersvg.set('中雨','18');
+                weathersvg.set('小雨','17');
+                weathersvg.set('晴','2');
+                weathersvg.set('阴','14');
                 var picnum=weathersvg.get(_w.s1);
                 // var weathersname=['阵雨','多云'];
                 // var weathersvg={'阵雨':16,'多云':};
