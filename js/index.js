@@ -21,8 +21,12 @@ function insertTime(){
 	var month=time.getMonth();
 	var date=time.getDate();
 	var week=document.getElementById("week");
-
-	week.innerText=weeks[weeknum-1]+","+months[month]+" "+date;  
+	if(weeknum==0){
+		weeknum=6;
+	}else{
+		weeknum=weeknum-1;
+	}
+	week.innerText=weeks[weeknum]+","+months[month]+" "+date;  
 	var width=week.clientWidth;
 	//alert(width);
 	week.style.marginLeft=width;
