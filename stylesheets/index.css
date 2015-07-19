@@ -5,6 +5,7 @@
 html {
   height: 100%;
   width: 100%;
+  /*让页面不可被选中*/
   -webkit-user-select: none;
   -moz-user-select: none;
 }
@@ -42,11 +43,7 @@ body {
   font-size: 20px;
   color: white;
 }
-#aboutMe {
-  position: absolute;
-  bottom: 100px;
-  right: 100px;
-}
+
 a {
   text-decoration: none;
   font-size: 40px;
@@ -138,6 +135,19 @@ a {
   text-align: center;
   opacity: 0;
 }
+#aboutMe {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  z-index: 10;
+}
+#aboutmeE{
+  position: absolute;
+  left:0px;
+  bottom: -60px;
+  text-align: center;
+  opacity: 0;
+}
 #BlogForMe:hover #blog{
   animation-name:showmore;
   animation-duration:1s;
@@ -196,3 +206,20 @@ a {
   }
 }
 /* class=row3 動畫結束 */
+
+#aboutMe:hover #aboutmeE{
+  animation-name:showmore;
+  animation-duration:1s;
+  animation-timing-function:ease-out;
+  -o-animation-name:showmore;
+  -o-animation-duration:1s;
+  -o-animation-timing-function:ease-out;
+  -moz-animation-name:showmore;
+  -moz-animation-duration:1s;
+  -moz-animation-timing-function:ease-out;
+  -webkit-animation-name:showmore;
+  -webkit-animation-duration:1s;
+  -webkit-animation-timing-function:ease-out;
+  opacity:1;
+  bottom: -50px;
+}

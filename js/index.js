@@ -53,6 +53,7 @@ function insertTime(){
                 weathersvg.set('小雨','17');
                 weathersvg.set('晴','2');
                 weathersvg.set('阴','14');
+                weathersvg.set('雷阵雨','15');
                 var picnum=weathersvg.get(_w.s1);
                 // var weathersname=['阵雨','多云'];
                 // var weathersvg={'阵雨':16,'多云':};
